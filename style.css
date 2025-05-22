@@ -1,0 +1,233 @@
+
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    /* background-color: #c5cfe6; */
+}
+
+header{
+    background-color: navy;
+    position: absolute;
+    width: 100%;
+    height: 1cm;
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+    line-height: 1em;
+    padding-top: .7em;
+    position: fixed;
+    font-family: 'kurale';
+    font-size: 1.5em;
+    margin-top: -6%;
+}
+.crown{
+    display: flex;
+    gap: 1em;
+        img{
+            height: 5em;
+        }
+        h3{
+            padding-top: 1em;
+        }
+}
+nav{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    background-color: white;
+    gap: 50em;
+    position: fixed;
+    span a{
+            text-decoration: none;
+            color: black;
+            padding-left: 6em;
+            padding-top: 1.5em;
+            font-family: 'kurale';
+            font-size: 1.25em;
+            color: maroon;
+    }
+}
+
+
+.shadow-dance-text {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba rgba(0,0,0,0.5)) url(images/8.webp);
+    font-size: 9rem;
+    color: #fcfbfb;
+    text-shadow: 8px 8px 0 #ff005e, 13px 13px 0 #00d4ff;
+    animation: shadow-dance 2s infinite;
+    text-align: center;
+    margin-top: 6%;
+    padding-top: 18%;
+}
+.shadow-dance-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/granny.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    text-align: center;
+}
+#a-word{
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+@keyframes shadow-dance {
+    0%, 100% {
+        text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+    }
+    50% {
+        text-shadow: -5px -5px 0 #00d4ff, -10px -10px 0 #ff005e;
+    }
+}
+
+.neon-text {
+    font-size: 4rem;
+    color: #070707;
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    animation: glow 1.5s infinite alternate;
+    text-align: center;
+    margin-top:1.5%;
+}
+
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #e97ba3, 0 0 10px #f18fb3, 0 0 20px #f38eb3, 0 0 40px #ee90b3, 0 0 80px #f793b8;
+    }
+    100% {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    }
+}
+
+#floating-container {
+  position: relative;
+  width: 100%; 
+  height: 100px;
+ 
+}
+.topics {
+  display: block;
+  vertical-align: top; 
+  left: 90px; 
+  top: 19%;
+  font-size: 1.5vw;
+  text-align: center;
+  color: rgb(32, 32, 248);
+  position: sticky;
+  font-weight: bolder;
+ 
+}
+
+Video {
+  position: screen;
+  right: 0;
+  margin-top: -7%;
+  width: 100%;
+  height: 80%;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.floating-word {
+  animation: floatAnimation 2s infinite;
+}
+.animate{
+    position: relative;
+    animation: animate 5s infinite;
+}
+
+@keyframes animate{
+  100% {right: 100%}
+  0% {right: 0%}
+}
+
+.animated {
+  position:relative;
+  animation: animate 5s infinite;
+}
+#members{
+    font-size: 3.5vw;
+    text-align: center;
+}
+
+img{
+    width: 15%;
+    height: 40vh;
+    border-radius: 50%;
+    align-items: center;
+    margin-left: 4%;
+}
+.team{
+    gap: 3%;
+}
+
+footer{
+    background-color: navy;
+    height: 10.5cm;
+    input{
+        padding: 3em;
+        font-size: 1.5em;
+        width: 15cm;
+        align-items: center;
+        margin-left: 32em;
+    }
+    button{
+        padding: 2em;
+        background-color: rgb(1, 1, 36);
+        color: white;
+        width: 4cm;
+        border-radius: 2em;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: transparent;
+        border: maroon solid 1px;
+    }
+    p{
+        font-family: 'nunito';
+    }
+ }
+ #feedback{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+ }
+ #social{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 2em;
+ }
+ #copyright{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.5em;
+ }
+ .socials{
+    a{
+        text-decoration: none;
+    }
+    i{
+        color: white;
+        padding-left: 10em;
+    }
+ }
+
+
